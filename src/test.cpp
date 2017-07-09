@@ -44,7 +44,7 @@ void TestSuite::add_case(const std::string &case_name, LambdaTestCase::Function 
 }
 
 
-void execute(const std::vector<TestSuite*> suites, Logger &logger)
+void execute(const std::vector<std::shared_ptr<TestSuite>> &suites, Logger &logger)
 {
     std::size_t overall_errors_count = 0;
 
