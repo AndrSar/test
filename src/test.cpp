@@ -73,4 +73,10 @@ void execute(const std::vector<std::shared_ptr<TestSuite>> &suites, Logger &logg
     }
 }
 
+
+std::shared_ptr<TestSuite> create_suite(const std::string &name)
+{
+    return std::make_shared<TestSuite>(name);
+}
+
 }

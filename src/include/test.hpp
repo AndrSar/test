@@ -182,4 +182,6 @@ public:
 
 void execute(const std::vector<std::shared_ptr<TestSuite>> &suites, Logger &logger);
 
+std::shared_ptr<TestSuite> create_suite(const std::string &name);
+
 }

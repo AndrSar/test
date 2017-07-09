@@ -18,7 +18,7 @@ public:
 
 int main(int argc, const char * const * argv)
 {
-    auto suite = std::make_shared<TestSuite>("My Suite");
+    auto suite = create_suite("My Suite");
 
     suite->add_case("Simple Case", [](auto &assert){
         assert.equal("WTF1", 1, 2);
