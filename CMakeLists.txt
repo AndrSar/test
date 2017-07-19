@@ -5,7 +5,8 @@
 
 cmake_minimum_required(VERSION 3.2)
 
-project(test CXX)
+cmake_policy(SET CMP0048 NEW)
+project(test VERSION 0.1.0 LANGUAGES CXX)
 
 message (STATUS "C++ compiler is ${CMAKE_CXX_COMPILER}")
 
